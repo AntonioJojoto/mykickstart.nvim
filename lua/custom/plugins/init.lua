@@ -4,4 +4,14 @@
 -- See the kickstart.nvim README for more information
 return {
   'ThePrimeagen/vim-be-good',
+  {
+    'windwp/nvim-ts-autotag',
+    ft = {
+      'javascript',
+      'javascriptreact',
+    },
+    config = function()
+      require('nvim-ts-autotag').setup()
+    end,
+  },
 }
